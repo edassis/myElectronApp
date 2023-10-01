@@ -298,3 +298,10 @@ See [Contributing Guide](contributing.md).
 [cawa-93-github]: https://github.com/cawa-93/
 
 [cawa-93-sponsor]: https://www.patreon.com/Kozack/
+
+## System libs
+
+    $ sudo apt install libasound2
+    $ sudo apt install libnss3-dev libgdk-pixbuf2.0-dev libgtk-3-dev libxss-de
+
+Install `wine`, `mono` for windows compile on linux.

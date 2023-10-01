@@ -1,12 +1,19 @@
 {
-  "name": "vite-electron-builder",
-  "description": "Secure boilerplate for Electron app based on Vite",
-  "version": "1.0.2",
+  "name": "vite-app",
+  "description": "Testing Vite",
+  "version": "1.0.0",
   "private": true,
   "author": {
-    "email": "kozackunisoft@gmail.com",
-    "name": "Alex Kozack",
-    "url": "https://kozack.me"
+    "email": "eduardoffassis@gmail.com",
+    "name": "Eduardo Assis"
+  },
+  "build": {
+    "linux": {
+      "category": "Development"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    }
   },
   "main": "packages/main/dist/index.cjs",
   "scripts": {
@@ -15,6 +22,7 @@
     "build:preload": "cd ./packages/preload && vite build",
     "build:renderer": "cd ./packages/renderer && vite build",
     "compile": "cross-env MODE=production npm run build && electron-builder build --config .electron-builder.config.js --dir --config.asar=false",
+    "dist": "cross-env MODE=production npm run build && electron-builder build --config .electron-builder.config.js --win --linux",
     "test": "npm run test:main && npm run test:preload && npm run test:renderer && npm run test:e2e",
     "test:e2e": "npm run build && vitest run",
     "test:main": "vitest run -r packages/main --passWithNoTests",
