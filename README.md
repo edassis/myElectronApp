@@ -1,11 +1,6 @@
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct-single.svg)](https://stand-with-ukraine.pp.ua)
 
----
 
-# Vite Electron Builder Boilerplate
-
-This is a template for secure electron applications. Written following the latest safety requirements, recommendations
-and best practices.
+# Yet another Electron app
 
 Under the hood is [Vite] — A next-generation blazing fast bundler, and [electron-builder] for packaging.
 
