@@ -28,6 +28,7 @@ module.exports = async function () {
     // Specify linux target just for disabling snap compilation
     linux: {
       target: 'deb',
+      category: 'Development',
     },
   };
 };
