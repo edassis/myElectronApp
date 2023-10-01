@@ -1,5 +1,5 @@
-import type {Route} from '@angular/router';
-import {provideRouter} from '@angular/router';
+import type { Route } from '@angular/router';
+import { provideRouter } from '@angular/router';
 
 const routes: Route[] = [
   {
